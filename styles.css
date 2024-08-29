@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -10,31 +11,31 @@ body {
 
 .fundo {
   position: relative;
-  width: 650px;
-  height: 650px;
-  border-radius: 90px;
-  border: 9px solid #FB6AB2;
-  box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 40vw;
+  height: 40vw;
+  border-radius: 7vw;
+  border: 0.7vw solid #FB6AB2;
   background: linear-gradient(243deg, #FDBFE2 7.84%, #FA9ACF 91.01%);
+  /* box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .seta {
   position: absolute;
-  width: 96px;
-  height: 96px;
+  width: 6vw;
+  height: 6vw;
   transform: translateY(-50%);
   border-radius: 50%;
-  border: 9px solid #FB6AB2;
-  box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 0.6vw solid #FB6AB2;
   background-color: #FEE7F2;
+  /* box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .seta.esquerda {
-  left: -60px;
+  left: -4vw;
 }
 
 .seta.direita {
-  right: -60px;
+  right: -4vw;
 }
 
 .seta.cima {
@@ -47,11 +48,10 @@ body {
 
 .logo {
   position: absolute;
-  top: -80px;
+  top: -5vw;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
-  height: 120px;
+  width: 25vw;
 }
 
 .elemento {
@@ -59,7 +59,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  /* z-index: 1; */
+  width: 25vw;
 }
+
