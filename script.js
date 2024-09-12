@@ -1,6 +1,7 @@
 let numeroImgOlhosAtual = 1;
 let numeroImgBocaAtual = 1;
-const totalImagens = 18;
+const totalImagensOlhos = 30;
+const totalImagensBocas = 28;
 const imagemOlhosMostrada = document.getElementById('olhos');
 const imagemBocaMostrada = document.getElementById('boca');
 
@@ -15,37 +16,37 @@ function trocarImagemBoca() {
 }
 
 document.getElementById('proximoOlhos').addEventListener('click', function() {
-  numeroImgOlhosAtual = numeroImgOlhosAtual < totalImagens ? numeroImgOlhosAtual + 1 : 1;
+  numeroImgOlhosAtual = numeroImgOlhosAtual < totalImagensOlhos ? numeroImgOlhosAtual + 1 : 1;
   trocarImagemOlhos();
 });    
 
 document.getElementById('anteriorOlhos').addEventListener('click', function() {
-  numeroImgOlhosAtual = numeroImgOlhosAtual > 1 ? numeroImgOlhosAtual - 1 : totalImagens;
+  numeroImgOlhosAtual = numeroImgOlhosAtual > 1 ? numeroImgOlhosAtual - 1 : totalImagensOlhos;
   trocarImagemOlhos();
 });    
 
 document.getElementById('proximoBoca').addEventListener('click', function() {
-  numeroImgBocaAtual = numeroImgBocaAtual < totalImagens ? numeroImgBocaAtual + 1 : 1;
+  numeroImgBocaAtual = numeroImgBocaAtual < totalImagensBocas ? numeroImgBocaAtual + 1 : 1;
   trocarImagemBoca();
 });
 
 document.getElementById('anteriorBoca').addEventListener('click', function() {
-  numeroImgBocaAtual = numeroImgBocaAtual > 1 ? numeroImgBocaAtual - 1 : totalImagens;
+  numeroImgBocaAtual = numeroImgBocaAtual > 1 ? numeroImgBocaAtual - 1 : totalImagensBocas;
   trocarImagemBoca();
 });
 
 document.addEventListener('keydown', function(event) {
   if (event.key.toLowerCase() === 'o') {
-      numeroImgOlhosAtual = numeroImgOlhosAtual < totalImagens ? numeroImgOlhosAtual + 1 : 1;
+      numeroImgOlhosAtual = numeroImgOlhosAtual < totalImagensOlhos ? numeroImgOlhosAtual + 1 : 1;
       trocarImagemOlhos();
   } else if (event.key.toLowerCase() === 'i') {
-      numeroImgOlhosAtual = numeroImgOlhosAtual > 1 ? numeroImgOlhosAtual - 1 : totalImagens;
+      numeroImgOlhosAtual = numeroImgOlhosAtual > 1 ? numeroImgOlhosAtual - 1 : totalImagensOlhos;
       trocarImagemOlhos();
   } else if (event.key.toLowerCase() === 'b') {
-      numeroImgBocaAtual = numeroImgBocaAtual < totalImagens ? numeroImgBocaAtual + 1 : 1;
+      numeroImgBocaAtual = numeroImgBocaAtual < totalImagensBocas ? numeroImgBocaAtual + 1 : 1;
       trocarImagemBoca();
   } else if (event.key.toLowerCase() === 'v') {
-      numeroImgBocaAtual = numeroImgBocaAtual > 1 ? numeroImgBocaAtual - 1 : totalImagens;
+      numeroImgBocaAtual = numeroImgBocaAtual > 1 ? numeroImgBocaAtual - 1 : totalImagensBocas;
       trocarImagemBoca();
   }
 });
