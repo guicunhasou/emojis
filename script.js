@@ -1,3 +1,12 @@
+let lastTouchEnd = 0;
+document.addEventListener('touchend', function(event) {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+    }
+    lastTouchEnd = now;
+}, false);
+
 let numeroImgOlhosAtual = 1;
 let numeroImgBocaAtual = 1;
 const totalImagensOlhos = 30;
